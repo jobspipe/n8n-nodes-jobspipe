@@ -1,5 +1,7 @@
 # n8n-nodes-jobspipe
 
+![The JobsPipe node in an n8n workflow: a schedule trigger, JobsPipe Search jobs returning 50 items, and Google Sheets](https://raw.githubusercontent.com/jobspipe/n8n-nodes-jobspipe/main/images/n8n.webp)
+
 This is an n8n community node for [JobsPipe](https://jobspipe.dev). It lets your workflows search live job postings, look up companies and detect the technologies a website runs.
 
 JobsPipe collects job postings from 30+ job boards, public employment services and company career sites and normalizes them into one schema. That makes it useful for sales signals (who is hiring for what), recruiting, job boards and market research.
@@ -26,6 +28,10 @@ Follow the [community nodes installation guide](https://docs.n8n.io/integrations
 | Company | Get Tech Stack | The technologies a company's job postings show it uses, graded by evidence. |
 | Company | Search by Technology | Companies whose job postings show they use a technology, filtered by country and size. |
 | Website | Scan Tech Stack | The technologies a website serves (frameworks, analytics, CDNs, payments, widgets). |
+
+![A job search request and its results: data engineer jobs in the US with company, location, salary and technologies](https://raw.githubusercontent.com/jobspipe/n8n-nodes-jobspipe/main/images/search.webp)
+
+![A website stack scan of stripe.com listing the detected technologies and how each was detected](https://raw.githubusercontent.com/jobspipe/n8n-nodes-jobspipe/main/images/scan.webp)
 
 Each result becomes its own n8n item. **Return All** follows the API's cursor across pages and stops at **Max Results** (default 100), so a run never spends more credits than you allow. Turn on **Options → Include Response Metadata** to get the credits charged and totals on each item.
 
