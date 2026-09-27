@@ -1,0 +1,58 @@
+{
+	"name": "n8n-nodes-jobspipe",
+	"version": "0.1.0",
+	"description": "n8n node for JobsPipe: search live job postings, look up companies and detect tech stacks",
+	"license": "MIT",
+	"homepage": "https://jobspipe.dev",
+	"keywords": [
+		"n8n-community-node-package",
+		"jobspipe",
+		"jobs",
+		"job-postings",
+		"hiring-signals",
+		"technographics",
+		"tech-stack"
+	],
+	"author": {
+		"name": "JobsPipe",
+		"email": "dvir@jobspipe.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jobspipe/n8n-nodes-jobspipe.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "vitest run",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/JobsPipeApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/JobsPipe/JobsPipe.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.49.1",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2",
+		"vitest": "^3.2.4"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
