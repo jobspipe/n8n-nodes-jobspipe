@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-jobspipe.jobsPipe",
+	"node": "@jobspipe/n8n-nodes-jobspipe.jobsPipe",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Sales", "Data & Storage"],

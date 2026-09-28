@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-jobspipe",
+	"name": "@jobspipe/n8n-nodes-jobspipe",
 	"version": "0.1.0",
 	"description": "n8n node for JobsPipe: search live job postings, look up companies and detect tech stacks",
 	"license": "MIT",

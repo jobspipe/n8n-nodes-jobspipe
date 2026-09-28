@@ -1,4 +1,4 @@
-# n8n-nodes-jobspipe
+# @jobspipe/n8n-nodes-jobspipe
 
 ![The JobsPipe node in an n8n workflow: a schedule trigger, JobsPipe Search jobs returning 50 items, and Google Sheets](https://raw.githubusercontent.com/jobspipe/n8n-nodes-jobspipe/main/images/n8n.webp)
 
@@ -10,7 +10,7 @@ JobsPipe collects job postings from 30+ job boards, public employment services a
 
 ## Installation
 
-Follow the [community nodes installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n docs: in n8n, open **Settings → Community Nodes → Install** and enter `n8n-nodes-jobspipe`.
+Follow the [community nodes installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n docs: in n8n, open **Settings → Community Nodes → Install** and enter `@jobspipe/n8n-nodes-jobspipe`.
 
 ## Credentials
 
